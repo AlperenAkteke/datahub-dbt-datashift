@@ -286,7 +286,7 @@ to check docs, in our case it will be 8090 instead of 8080, since that port is a
 
 11. **Ingest Metadata into in Datahub**
 
-Create your dbt_recipe.yaml file with the appropriate paths:
+Create your dbt_recipe.yaml file with the appropriate paths and config:
 
 ```bash
 datahub ingest -c dbt_recipe.yaml

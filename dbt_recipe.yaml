@@ -3,4 +3,64 @@ source:
   config:
     manifest_path: "./demo_dbt_datashift/dbt_manifest/manifest.json"
     catalog_path: "./demo_dbt_datashift/dbt_manifest/catalog.json"
+    run_results_path: "./demo_dbt_datashift/dbt_manifest/run_results.json"
     target_platform: postgres
+    meta_mapping:
+      business_owner:
+        match: ".*"
+        operation: "add_owner"
+        config:
+          owner_type: user
+          owner_category: BUSINESS_OWNER
+
+      data_steward:
+        match: ".*"
+        operation: "add_owner"
+        config:
+          owner_type: user
+          owner_category: DATA_STEWARD
+
+      technical_owner:
+        match: ".*"
+        operation: "add_owner"
+        config:
+          owner_type: user
+          owner_category: TECHNICAL_OWNER
+
+      model_maturity:
+        match: "Certified"
+        operation: "add_tag"
+        config:
+          tag: "certified"
+
+      contains_pii:
+        match: false
+        operation: "add_tag"
+        config:
+          tag: "no_pii"
+
+      classification:
+        match: "Public"
+        operation: "add_term"
+        config:
+          term: "public_data"
+
+      data_lifecycle:
+        match: "Production"
+        operation: "add_term"
+        config:
+          term: "production"
+
+      owner:
+        match: ".*"
+        operation: "add_owner"
+        config:
+          owner_type: group
+          owner_category: DATAOWNER
+
+    column_meta_mapping:
+      terms_list:
+        match: ".*"
+        operation: "add_terms"
+        config:
+          separator: ","
