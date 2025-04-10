@@ -27,29 +27,11 @@ source:
           owner_type: user
           owner_category: TECHNICAL_OWNER
 
-      model_maturity:
-        match: "Certified"
-        operation: "add_tag"
-        config:
-          tag: "certified"
-
-      contains_pii:
-        match: false
-        operation: "add_tag"
-        config:
-          tag: "no_pii"
-
       classification:
         match: "Delivery"
         operation: "add_term"
         config:
           term: "Delivery"
-
-      data_lifecycle:
-        match: "Production"
-        operation: "add_term"
-        config:
-          term: "production"
 
       owner:
         match: ".*"
