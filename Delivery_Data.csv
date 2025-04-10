@@ -1,0 +1,101 @@
+tracking_id,sender,recipient,package_type,weight_kg,origin_center,destination_center,status,estimated_delivery
+TRK100000,Zalando,CUST1388,Registered Mail,9.58,Hasselt Center,Charleroi Depot,In Transit,2025-02-19
+TRK100001,Coolblue,CUST4823,Large Parcel,4.18,Leuven Sorting,Leuven Sorting,Returned to Sender,2025-02-25
+TRK100002,Bol.com,CUST5988,Bulk Shipment,8.27,Antwerp Sorting Center,Liege Hub,Out for Delivery,2025-02-26
+TRK100003,eBay,CUST8035,Small Parcel,1.96,Hasselt Center,Hasselt Center,Sorting Facility,2025-02-23
+TRK100004,Coolblue,CUST3405,Letter,4.33,Ghent Distribution,Ghent Distribution,Returned to Sender,2025-02-25
+TRK100005,eBay,CUST7615,Registered Mail,5.2,Liege Hub,Liege Hub,Returned to Sender,2025-02-21
+TRK100006,eBay,CUST3867,Fragile Package,2.66,Leuven Sorting,Leuven Sorting,Returned to Sender,2025-02-18
+TRK100007,Amazon,CUST9581,Bulk Shipment,1.04,Liege Hub,Leuven Sorting,Sorting Facility,2025-02-19
+TRK100008,Zalando,CUST7394,Bulk Shipment,3.25,Liege Hub,Antwerp Sorting Center,Sorting Facility,2025-02-19
+TRK100009,eBay,CUST1201,Fragile Package,7.95,Leuven Sorting,Leuven Sorting,Failed Attempt,2025-02-18
+TRK100010,Bol.com,CUST4265,Registered Mail,9.52,Leuven Sorting,Brussels Hub,In Transit,2025-02-25
+TRK100011,Decathlon,CUST3534,Letter,5.12,Hasselt Center,Namur Warehouse,Out for Delivery,2025-02-21
+TRK100012,Coolblue,CUST7167,Letter,6.51,Brussels Hub,Hasselt Center,In Transit,2025-02-28
+TRK100013,AliExpress,CUST6869,Small Parcel,6.5,Brussels Hub,Brussels Hub,Out for Delivery,2025-02-22
+TRK100014,AliExpress,CUST3932,Bulk Shipment,3.46,Hasselt Center,Hasselt Center,Sorting Facility,2025-02-21
+TRK100015,Decathlon,CUST3585,Fragile Package,6.29,Namur Warehouse,Liege Hub,Failed Attempt,2025-02-25
+TRK100016,Bol.com,CUST8799,Bulk Shipment,1.98,Liege Hub,Charleroi Depot,Delivered,2025-02-20
+TRK100017,Bol.com,CUST2029,Registered Mail,8.63,Liege Hub,Liege Hub,In Transit,2025-02-26
+TRK100018,Decathlon,CUST6992,Registered Mail,7.77,Namur Warehouse,Antwerp Sorting Center,Returned to Sender,2025-02-19
+TRK100019,Coolblue,CUST4375,Large Parcel,8.04,Brussels Hub,Liege Hub,Out for Delivery,2025-02-24
+TRK100020,Bol.com,CUST8070,Letter,1.47,Liege Hub,Antwerp Sorting Center,Out for Delivery,2025-02-24
+TRK100021,Coolblue,CUST3378,Small Parcel,9.39,Brussels Hub,Liege Hub,Delivered,2025-02-25
+TRK100022,AliExpress,CUST2364,Fragile Package,4.99,Liege Hub,Antwerp Sorting Center,In Transit,2025-02-26
+TRK100023,Decathlon,CUST5579,Large Parcel,4.23,Charleroi Depot,Antwerp Sorting Center,In Transit,2025-02-22
+TRK100024,eBay,CUST1207,Registered Mail,6.04,Liege Hub,Antwerp Sorting Center,Sorting Facility,2025-02-25
+TRK100025,Decathlon,CUST6749,Small Parcel,1.52,Ghent Distribution,Liege Hub,Returned to Sender,2025-02-24
+TRK100026,Amazon,CUST1126,Fragile Package,8.18,Liege Hub,Liege Hub,In Transit,2025-02-24
+TRK100027,Zalando,CUST3605,Small Parcel,5.43,Charleroi Depot,Liege Hub,Failed Attempt,2025-02-25
+TRK100028,Decathlon,CUST2372,Fragile Package,3.47,Brussels Hub,Ghent Distribution,Returned to Sender,2025-02-28
+TRK100029,Decathlon,CUST8836,Registered Mail,6.9,Brussels Hub,Ghent Distribution,Sorting Facility,2025-02-27
+TRK100030,Amazon,CUST9844,Bulk Shipment,7.34,Ghent Distribution,Hasselt Center,Returned to Sender,2025-02-28
+TRK100031,eBay,CUST3126,Registered Mail,2.84,Ghent Distribution,Brussels Hub,Delivered,2025-02-18
+TRK100032,Bol.com,CUST3184,Fragile Package,6.2,Ghent Distribution,Charleroi Depot,Failed Attempt,2025-02-20
+TRK100033,AliExpress,CUST8360,Letter,8.79,Charleroi Depot,Charleroi Depot,Returned to Sender,2025-02-18
+TRK100034,eBay,CUST5668,Large Parcel,0.55,Leuven Sorting,Charleroi Depot,Returned to Sender,2025-02-27
+TRK100035,Decathlon,CUST4711,Registered Mail,3.92,Charleroi Depot,Liege Hub,Returned to Sender,2025-02-22
+TRK100036,Bol.com,CUST8567,Small Parcel,5.88,Liege Hub,Ghent Distribution,Sorting Facility,2025-02-27
+TRK100037,Coolblue,CUST6227,Fragile Package,3.08,Namur Warehouse,Hasselt Center,Failed Attempt,2025-02-22
+TRK100038,Amazon,CUST6884,Fragile Package,2.37,Brussels Hub,Charleroi Depot,Sorting Facility,2025-02-24
+TRK100039,eBay,CUST2008,Letter,2.86,Ghent Distribution,Antwerp Sorting Center,Returned to Sender,2025-02-18
+TRK100040,eBay,CUST6274,Small Parcel,5.13,Liege Hub,Brussels Hub,In Transit,2025-02-26
+TRK100041,eBay,CUST5211,Registered Mail,2.38,Charleroi Depot,Ghent Distribution,Delivered,2025-02-26
+TRK100042,Zalando,CUST4316,Letter,4.77,Ghent Distribution,Brussels Hub,In Transit,2025-02-26
+TRK100043,AliExpress,CUST7753,Bulk Shipment,3.03,Leuven Sorting,Leuven Sorting,Out for Delivery,2025-02-18
+TRK100044,AliExpress,CUST6710,Fragile Package,7.02,Charleroi Depot,Ghent Distribution,Delivered,2025-02-22
+TRK100045,eBay,CUST1357,Bulk Shipment,7.12,Brussels Hub,Ghent Distribution,Out for Delivery,2025-02-20
+TRK100046,Coolblue,CUST2828,Large Parcel,8.28,Leuven Sorting,Ghent Distribution,In Transit,2025-02-28
+TRK100047,Zalando,CUST8366,Large Parcel,5.66,Ghent Distribution,Namur Warehouse,Out for Delivery,2025-02-18
+TRK100048,Zalando,CUST2011,Registered Mail,8.32,Namur Warehouse,Ghent Distribution,Returned to Sender,2025-02-20
+TRK100049,Amazon,CUST1489,Bulk Shipment,6.24,Liege Hub,Liege Hub,In Transit,2025-02-18
+TRK100050,Coolblue,CUST6948,Large Parcel,5.07,Antwerp Sorting Center,Charleroi Depot,In Transit,2025-02-23
+TRK100051,Coolblue,CUST3834,Bulk Shipment,4.14,Brussels Hub,Charleroi Depot,Returned to Sender,2025-02-24
+TRK100052,Bol.com,CUST3973,Letter,1.23,Antwerp Sorting Center,Charleroi Depot,In Transit,2025-02-20
+TRK100053,Bol.com,CUST6730,Bulk Shipment,2.97,Namur Warehouse,Ghent Distribution,Sorting Facility,2025-02-23
+TRK100054,Amazon,CUST7083,Fragile Package,6.4,Charleroi Depot,Namur Warehouse,Sorting Facility,2025-02-25
+TRK100055,Zalando,CUST4740,Fragile Package,6.38,Namur Warehouse,Namur Warehouse,Failed Attempt,2025-02-21
+TRK100056,Zalando,CUST7662,Small Parcel,3.85,Brussels Hub,Namur Warehouse,In Transit,2025-02-27
+TRK100057,AliExpress,CUST5255,Registered Mail,8.46,Charleroi Depot,Brussels Hub,In Transit,2025-02-27
+TRK100058,Amazon,CUST6676,Bulk Shipment,2.32,Ghent Distribution,Hasselt Center,Failed Attempt,2025-02-22
+TRK100059,Zalando,CUST4767,Large Parcel,4.02,Hasselt Center,Antwerp Sorting Center,Returned to Sender,2025-02-18
+TRK100060,Amazon,CUST2111,Large Parcel,3.57,Leuven Sorting,Liege Hub,Failed Attempt,2025-02-21
+TRK100061,AliExpress,CUST8083,Registered Mail,2.6,Liege Hub,Ghent Distribution,Failed Attempt,2025-02-25
+TRK100062,AliExpress,CUST5041,Registered Mail,8.37,Liege Hub,Hasselt Center,Out for Delivery,2025-02-24
+TRK100063,Coolblue,CUST2738,Small Parcel,0.57,Leuven Sorting,Brussels Hub,Failed Attempt,2025-02-28
+TRK100064,eBay,CUST7004,Bulk Shipment,8.32,Brussels Hub,Charleroi Depot,Delivered,2025-02-21
+TRK100065,Zalando,CUST9643,Fragile Package,1.32,Leuven Sorting,Leuven Sorting,Returned to Sender,2025-02-28
+TRK100066,Coolblue,CUST3648,Bulk Shipment,5.06,Leuven Sorting,Antwerp Sorting Center,Out for Delivery,2025-02-19
+TRK100067,Coolblue,CUST3311,Large Parcel,2.48,Charleroi Depot,Ghent Distribution,Failed Attempt,2025-02-21
+TRK100068,Decathlon,CUST9248,Bulk Shipment,4.47,Antwerp Sorting Center,Leuven Sorting,Delivered,2025-02-19
+TRK100069,Amazon,CUST5744,Bulk Shipment,7.4,Ghent Distribution,Ghent Distribution,Sorting Facility,2025-02-21
+TRK100070,eBay,CUST9556,Fragile Package,3.93,Antwerp Sorting Center,Leuven Sorting,In Transit,2025-02-27
+TRK100071,Amazon,CUST3777,Bulk Shipment,7.57,Hasselt Center,Ghent Distribution,Returned to Sender,2025-02-23
+TRK100072,AliExpress,CUST1248,Small Parcel,7.89,Hasselt Center,Hasselt Center,Delivered,2025-02-19
+TRK100073,Amazon,CUST4033,Large Parcel,3.38,Liege Hub,Ghent Distribution,Delivered,2025-02-28
+TRK100074,Zalando,CUST7134,Fragile Package,4.0,Ghent Distribution,Antwerp Sorting Center,Sorting Facility,2025-02-20
+TRK100075,Zalando,CUST4034,Small Parcel,3.08,Charleroi Depot,Namur Warehouse,Failed Attempt,2025-02-27
+TRK100076,Coolblue,CUST9517,Large Parcel,0.99,Antwerp Sorting Center,Leuven Sorting,Failed Attempt,2025-02-27
+TRK100077,Bol.com,CUST4568,Small Parcel,4.13,Liege Hub,Charleroi Depot,Sorting Facility,2025-02-20
+TRK100078,Zalando,CUST3022,Letter,8.42,Namur Warehouse,Namur Warehouse,In Transit,2025-02-22
+TRK100079,Decathlon,CUST2983,Letter,8.14,Namur Warehouse,Ghent Distribution,Sorting Facility,2025-02-26
+TRK100080,Amazon,CUST2915,Large Parcel,3.74,Namur Warehouse,Ghent Distribution,Failed Attempt,2025-02-24
+TRK100081,Bol.com,CUST4671,Letter,5.27,Liege Hub,Ghent Distribution,Sorting Facility,2025-02-28
+TRK100082,Amazon,CUST9035,Letter,8.62,Brussels Hub,Antwerp Sorting Center,Failed Attempt,2025-02-28
+TRK100083,Bol.com,CUST8816,Fragile Package,8.22,Antwerp Sorting Center,Hasselt Center,Returned to Sender,2025-02-20
+TRK100084,eBay,CUST7732,Letter,2.2,Hasselt Center,Namur Warehouse,Failed Attempt,2025-02-20
+TRK100085,Amazon,CUST2611,Small Parcel,8.89,Antwerp Sorting Center,Namur Warehouse,Out for Delivery,2025-02-25
+TRK100086,Decathlon,CUST9381,Letter,1.31,Hasselt Center,Hasselt Center,Returned to Sender,2025-02-18
+TRK100087,eBay,CUST4629,Fragile Package,0.57,Hasselt Center,Brussels Hub,Sorting Facility,2025-02-24
+TRK100088,Decathlon,CUST3141,Small Parcel,3.7,Ghent Distribution,Antwerp Sorting Center,Failed Attempt,2025-02-24
+TRK100089,Amazon,CUST2472,Fragile Package,5.79,Hasselt Center,Brussels Hub,Failed Attempt,2025-02-27
+TRK100090,Amazon,CUST6832,Small Parcel,2.72,Charleroi Depot,Hasselt Center,Returned to Sender,2025-02-26
+TRK100091,eBay,CUST8267,Letter,0.7,Leuven Sorting,Namur Warehouse,In Transit,2025-02-21
+TRK100092,Amazon,CUST6988,Large Parcel,9.16,Brussels Hub,Antwerp Sorting Center,Sorting Facility,2025-02-23
+TRK100093,Bol.com,CUST9444,Bulk Shipment,7.98,Namur Warehouse,Liege Hub,Failed Attempt,2025-02-23
+TRK100094,Coolblue,CUST2897,Fragile Package,8.57,Brussels Hub,Leuven Sorting,In Transit,2025-02-21
+TRK100095,Zalando,CUST6385,Letter,8.19,Charleroi Depot,Hasselt Center,Delivered,2025-02-23
+TRK100096,Bol.com,CUST9489,Registered Mail,7.8,Brussels Hub,Charleroi Depot,Delivered,2025-02-20
+TRK100097,eBay,CUST9536,Letter,5.71,Namur Warehouse,Liege Hub,Sorting Facility,2025-02-25
+TRK100098,Bol.com,CUST2786,Letter,8.63,Leuven Sorting,Brussels Hub,Out for Delivery,2025-02-28
+TRK100099,AliExpress,CUST2957,Bulk Shipment,3.67,Brussels Hub,Leuven Sorting,Delivered,2025-02-21

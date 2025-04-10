@@ -1,0 +1,4 @@
+logs/
+datahub-setup/poetry.lock
+demo_dbt_datashift/
+

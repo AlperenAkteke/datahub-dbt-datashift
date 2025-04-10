@@ -24,8 +24,8 @@ git clone https://github.com/AlperenAkteke/datahub-dbt-datashift.git
 2. **Run the setup script**
 
 ```bash
-chmod +x ./datahub-tutorial/setup_datahub.sh
-./datahub-tutorial/setup_datahub.sh
+chmod +x ./datahub-setup/setup_datahub.sh
+./datahub-setup/setup_datahub.sh
 ```
 3. **Verify the installation**
 
@@ -90,6 +90,8 @@ mkdir -p "$DBT_PROFILES_DIR"
 dbt init demo_dbt_datashift
 ```
 
+Since profile is provided under profiles folder, you don't need to implement next step, unless you want to overwrite it with your own parameters.
+
 ```bash
 Used parameters:
 Database=postgres(enter the corresponding number)
@@ -137,9 +139,123 @@ The dbt seed command is used to load CSV files into your data warehouse as datab
 
 9. **Run Models & Tests**
 
-In demo_dbt_datashift/models we can create or own models(feel free to remove the examples, when doing the setup yourself).
+In demo_dbt_datashift/models we can create or own models(remove the examples, and replace with the following).
 
-In our case, we have two models with a not_null test as you can see in the schema file.
+Create a marts folder under models 
+create mrt_delivery_summary.sql with content:
+
+```bash
+WITH delivery_stats AS (
+    SELECT 
+        sender,
+        package_type,
+        status,
+        COUNT(tracking_id) AS total_shipments,
+        ROUND(CAST(AVG(weight_kg) AS NUMERIC), 2) AS avg_weight
+    FROM {{ ref('stg_delivery_data') }}
+    GROUP BY sender, package_type, status
+)
+
+SELECT 
+    sender,
+    package_type,
+    status,
+    total_shipments,
+    avg_weight
+FROM delivery_stats
+```
+Create a staging folder under models 
+create stg_delivery_data.sql with content:
+
+```bash
+SELECT 
+    tracking_id,
+    sender,
+    recipient,
+    package_type,
+    weight_kg,
+    origin_center,
+    destination_center,
+    status,
+    CAST(estimated_delivery AS DATE) AS estimated_delivery
+FROM {{ source('public', 'Delivery_Data') }}
+WHERE tracking_id IS NOT NULL
+```
+
+Finally replace the schema.yml with our own schema:
+
+```bash
+version: 2
+
+sources:
+  - name: public
+    tables:
+      - name: Delivery_Data
+        description: "Raw delivery data containing shipment records"
+        meta:
+          business_owner: "jesse.vanhaeren@datashift.eu"
+          data_steward: "frederik.druyts@datashift.eu"
+          technical_owner: "alperen.akteke@datashift.eu"
+        columns:
+          - name: tracking_id
+          - name: sender
+            meta:
+              terms_list: "https://www.datashift.eu/terms_list"
+          - name: recipient
+          - name: package_type
+          - name: weight_kg
+          - name: origin_center
+          - name: destination_center
+          - name: status
+          - name: estimated_delivery
+            
+
+models:
+  - name: stg_delivery_data
+    description: "Staging model for delivery records"
+    meta:
+      model_maturity: Certified
+      contains_pii: false
+      classification: Public
+      data_lifecycle: Production
+      owner: User Analytics
+    columns:
+      - name: tracking_id
+        description: "Unique identifier for each delivery"
+        tests:
+          - unique
+          - not_null
+
+      - name: sender
+        description: "Company or individual sending the package"
+        tests:
+          - not_null
+
+      - name: recipient
+        description: "Recipient of the package"
+        tests:
+          - not_null
+
+      - name: weight_kg
+        description: "Weight of the package in kilograms"
+        tests:
+          - not_null
+
+  - name: mrt_delivery_summary
+    description: "Aggregated summary of deliveries"
+    columns:
+      - name: sender
+        description: "Company sending the packages"
+        tests:
+          - not_null
+
+      - name: total_shipments
+        description: "Total number of shipments for this sender"
+        tests:
+          - not_null
+```
+
+
 
 ```bash
 dbt run
@@ -153,7 +269,7 @@ These command should give a succesfull output.
 
 10. **Generate docs**
 
-In our example we changed the last part in dbt_project.yml to
+In our example we replaced the last part in dbt_project.yml to
 
 ```bash
 models:

@@ -1,0 +1,6 @@
+source:
+  type: dbt
+  config:
+    manifest_path: "./demo_dbt_datashift/dbt_manifest/manifest.json"
+    catalog_path: "./demo_dbt_datashift/dbt_manifest/catalog.json"
+    target_platform: postgres

@@ -1,0 +1,33 @@
+services:
+  
+  postgres:
+    container_name: postgres
+    image: postgres:12.17
+    restart: always
+    environment:
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: logistics_db
+    ports:
+      - "5432:5432"
+    volumes:
+       - postgres_data:/var/lib/postgresql/data
+
+  dbt:
+    container_name: dbt
+    image: ghcr.io/dbt-labs/dbt-postgres:1.7.2
+    volumes:
+      - ./demo_dbt_datashift:/usr/app/dbt/demo_dbt_datashift
+      - ./profiles/profiles.yml:/root/.dbt/profiles.yml
+      - ./demo_dbt_datashift/dbt_manifest:/usr/app/dbt/demo_dbt_datashift/target
+    working_dir: /usr/app/dbt/demo_dbt_datashift
+    ports:
+      - "8090:8080"
+    depends_on:
+      - postgres
+    entrypoint: bash
+    command: -c "while true; do sleep 1; done"
+
+
+volumes:
+  postgres_data:

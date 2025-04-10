@@ -1,0 +1,12 @@
+demo_dbt_datashift:
+  outputs:
+    dev:
+      dbname: logistics_db
+      host: postgres
+      pass: password
+      port: 5432
+      schema: public
+      threads: 1
+      type: postgres
+      user: username
+  target: dev

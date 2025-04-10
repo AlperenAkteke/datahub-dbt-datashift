@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "datahub-tutorial"
+version = "0.1.0"
+description = "setup DataHub with Poetry"
+authors = ["A"]
+license = "MIT"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+acryl-datahub = "*"
+dbt-postgres = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
