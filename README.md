@@ -296,7 +296,16 @@ Now you can explore your dbt metadata in DataHub at:
 http://localhost:9002
 (Default credentials: datahub / datahub)
 
+If you are missing test results, run 
+```bash
+dbt test
+```
+and 
 
+```bash
+datahub ingest -c dbt_recipe.yaml
+```
+again.
 
 
 📚 Additional Resources

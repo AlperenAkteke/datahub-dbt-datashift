@@ -27,11 +27,11 @@ source:
           owner_type: user
           owner_category: TECHNICAL_OWNER
 
-      classification:
-        match: "Delivery"
-        operation: "add_term"
+      terms_list:
+        match: ".*"
+        operation: "add_terms"
         config:
-          term: "Delivery"
+          separator: ","
 
       owner:
         match: ".*"
