@@ -40,10 +40,10 @@ source:
           tag: "no_pii"
 
       classification:
-        match: "Public"
+        match: "Delivery"
         operation: "add_term"
         config:
-          term: "public_data"
+          term: "Delivery"
 
       data_lifecycle:
         match: "Production"
